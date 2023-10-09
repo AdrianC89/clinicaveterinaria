@@ -1,0 +1,10 @@
+.navbar {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.brand img {
+ width: 300px
+};
