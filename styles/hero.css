@@ -44,12 +44,21 @@
 }
 
 .hero-button {
- background: var(--black-color);
- color: white;
+ background: var(--primary-color);
+ color: rgb(28, 27, 27);
+ font-weight: bolder;
  padding: 0.75em 1em;
  border-radius: 20px;
  width: fit-content;
 }
+
+.hero-button:hover {
+    background: rgb(5, 30, 67);
+    color: var(--primary-color);
+    padding: 0.75em 1em;
+    border-radius: 20px;
+    width: fit-content;
+   }
 
 .left-floating {
     width: 250px;
