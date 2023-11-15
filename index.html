@@ -13,10 +13,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="contenedorclima">
+        <div id="caja1">
+            <span id="temperatura-valor"></span><span> - </span>
+            <span id="temperatura-descripcion"></span>
+        </div>
+        <div id="caja2">
+            <span id="ubicacion"></span>
+            <img id="icono-animado" src="" alt="" height="128" width="128">
+        </div>
+        <div id="caja3">
+            <span>Veloc. del Viento:</span>
+            <span id="viento-velocidad"></span>
+        </div>
+    </div>
     <header>
         <nav class="navbar">
         <div class="brand">
-            <img src="Assets/logo_text.png" alt="logo de veterinaria">
+            <a href="index.html"><img src="Assets/logo_text.png" alt="logo de veterinaria"></a>
         </div>
         <div class="actions">
             <img src="Assets/icons/menu.svg" alt="boton de menu">
@@ -46,6 +60,45 @@
                 </div>
             </div>
         </section>
+
+    
+           <!-- Formulario de turnos (inicialmente oculto) -->
+       <!-- Formulario de turnos oculto -->
+    <section id="turnos-form" style="display: none;">
+        <h3>Reserva tu turno</h3>
+        <form id="turno-formulario">
+            <!-- Campos del formulario -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="nombreMascota">Nombre de la mascota:</label>
+            <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <!-- Lista de fechas y horas disponibles -->
+            <label for="selectDia">Selecciona un día:</label>
+                <select id="selectDia">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miércoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                </select>
+            <fieldset>
+                <legend>Fecha y hora:</legend>
+                <!-- Aquí se generarán dinámicamente las opciones de fecha y hora con JavaScript -->
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
     </main>
     <footer class="footer">
         <img class="footer-floating" src="Assets/slider_perro_gato.png" alt="">
@@ -58,5 +111,7 @@
             <p>Developed by Adrián Coronel</p>
         </div>
     </footer>
+    <script src="JS/botonform.js" ></script>
+    <script src="JS/clima.js" ></script>
 </body>
 </html>

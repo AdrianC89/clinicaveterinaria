@@ -2,6 +2,8 @@
 @import 'variables.css';
 
 @import 'navbar.css';
+@import 'clima.css';
 @import 'hero.css';
 @import 'features.css';
-@import 'footer.css'
+@import 'footer.css';
+@import 'form.css'
