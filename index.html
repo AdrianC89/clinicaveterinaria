@@ -29,12 +29,25 @@
     </div>
     <header>
         <nav class="navbar">
-        <div class="brand">
-            <a href="index.html"><img src="Assets/logo_text.png" alt="logo de veterinaria"></a>
-        </div>
-        <div class="actions">
-            <img src="Assets/icons/menu.svg" alt="boton de menu">
-        </div>
+            <div class="brand">
+                <img src="Assets/logo_text.png" alt="logo de veterinaria">
+            </div>
+            <div class="actions">
+                <img id="menu-icon" src="Assets/icons/menu.svg" alt="boton de menu">
+                <div class="menu-container">
+                    <div class="menu-dropdown" id="menuDropdown">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><a href="https://github.com/AdrianC89">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -111,7 +124,9 @@
             <p>Developed by Adrián Coronel</p>
         </div>
     </footer>
+    <script src="JS/menu.js" ></script>
     <script src="JS/botonform.js" ></script>
     <script src="JS/clima.js" ></script>
+    
 </body>
 </html>
