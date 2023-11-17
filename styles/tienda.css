@@ -1,0 +1,81 @@
+.contenedor-imagen {
+    height: 200px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+}
+
+.contenedor-imagen img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho completo del contenedor */
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .vete-item {
+    margin: 1rem;
+    position: relative;
+    overflow: auto;
+    width: 230px;
+    min-width: 230px;
+    height: 350px;
+    background-color: var(--primary-color);
+    border: black 1px solid;
+    border-radius: 0 10px ;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.308);
+  }
+  
+  .vete-title {
+    margin-top:0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: normal;
+    background: rgb(5, 30, 67);
+  }
+  
+  .imgvete {
+    display: block;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: rgb(5, 30, 67) 3px solid;
+    border-radius: 5px;
+  }
+
+.vete-description {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 200px;
+  margin-left: 0.5rem;
+  background-color: var(--primary-color);;
+  
+}
+
+.description-toggle {
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background: rgb(5, 30, 67);
+  color: antiquewhite;
+  font-family:  'Indie Flower', cursive;
+  border: none;
+  border-radius: 5px;
+}
+
+.description-toggle:hover {
+    background: rgb(60, 114, 158);
+    text-shadow: 0 0 0.2em rgb(66, 48, 21), 0 0 0.2em rgb(71, 68, 48),
+		0 0 0.2em rgb(0, 0, 0);
+    transition: 0.5s;
+
+  }

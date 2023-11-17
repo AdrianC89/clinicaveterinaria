@@ -26,6 +26,11 @@
     padding: 1rem;
 }
 
+.feature > iframe {
+    border-radius: 5%;
+    border: var(--primary-color) 2px solid;
+}
+
 .features-wrapper {
     display: flex;
     flex-direction: column;

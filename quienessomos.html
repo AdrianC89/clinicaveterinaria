@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Veterinaria</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedorclima">
+        <div id="caja1">
+            <span id="temperatura-valor"></span><span> - </span>
+            <span id="temperatura-descripcion"></span>
+        </div>
+        <div id="caja2">
+            <span id="ubicacion"></span>
+            <img id="icono-animado" src="" alt="" height="128" width="128">
+        </div>
+        <div id="caja3">
+            <span>Veloc. del Viento:</span>
+            <span id="viento-velocidad"></span>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="Assets/logo_text.png" alt="logo de veterinaria">
+            </div>
+            <div class="actions">
+                <img id="menu-icon" src="Assets/icons/menu.svg" alt="boton de menu">
+                <div class="menu-container">
+                    <div class="menu-dropdown" id="menuDropdown">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><a href="https://github.com/AdrianC89">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="Assets/hero_left.png" alt="ovejeroaleman" class="left-floating">
+            <img src="Assets/hero_right.png" alt="queso" class="right-floating">
+            <div class="plate-wrapper">
+                
+                <img class="plate" src="Assets/plate.png" alt="perro">
+                <div class="plate-circle"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title text-serif">¿Quienes Somos?</h2>
+                <video src="Assets/videos/videoveterinaria.mp4" id="videoprincipal" autoplay controls muted loop></video>
+            </div>
+        </section>
+        <section class="features">
+            <div class="features-wrapper">
+                <div class="feature">
+                    <h4 class="text-serif feature-title">CLINICA VETERINARIA</h4>
+                    <p>
+                        Bienvenido a nuestra Clínica Veterinaria, un hogar de cuidado y compasión para tus adoradas mascotas. Nos enorgullece ser un refugio seguro donde cada patita y pajarito es recibido con amor y atención experta.
+                        
+                        En nuestra clínica, nos dedicamos apasionadamente a la salud y el bienestar de tus compañeros peludos. Nuestro equipo de veterinarios altamente calificados combina conocimientos especializados con una genuina devoción por los animales. Desde exámenes de rutina hasta tratamientos especializados, nos esforzamos por ofrecer la más alta calidad de atención médica y cariño a cada uno de nuestros pacientes.
+                        
+                        Más allá de la medicina veterinaria, somos una comunidad comprometida con el vínculo especial entre humanos y animales. Nos esforzamos por comprender las necesidades individuales de tus mascotas y trabajar de la mano contigo para brindar soluciones personalizadas.
+                        
+                        En nuestra clínica, no solo cuidamos a los animales, también cuidamos a las familias que los aman. Nuestro objetivo es proporcionar un ambiente acogedor y tranquilizador donde tanto tú como tus mascotas se sientan como en casa. Confía en nosotros para mantener a tus adorables amigos felices y saludables durante toda su vida.
+                        
+                        En cada latido de corazón y lamida amistosa, estamos comprometidos a ser el lugar donde el amor por los animales se encuentra con la excelencia veterinaria. ¡Bienvenido a nuestra familia de la Clínica Veterinaria!</p>
+                        <h4 class="text-serif feature-title">¿DONDE NOS ENCONTRAS?</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.09074957413!2d-59.130588824136325!3d-37.316678005792745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f9424b95de3%3A0x36c9405cf8f65e9c!2sCl%C3%ADnica%20Veterinaria%20Colonial!5e0!3m2!1ses-419!2sar!4v1700183083557!5m2!1ses-419!2sar" width="80%" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+    
+           <!-- Formulario de turnos (inicialmente oculto) -->
+       <!-- Formulario de turnos oculto -->
+    <section id="turnos-form" style="display: none;">
+        <h3>Reserva tu turno</h3>
+        <form id="turno-formulario">
+            <!-- Campos del formulario -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="nombreMascota">Nombre de la mascota:</label>
+            <input type="text" id="nombreMascota" name="nombreMascota" required>
+
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <!-- Lista de fechas y horas disponibles -->
+            <label for="selectDia">Selecciona un día:</label>
+                <select id="selectDia">
+                    <option value="Lunes">Lunes</option>
+                    <option value="Martes">Martes</option>
+                    <option value="Miércoles">Miércoles</option>
+                    <option value="Jueves">Jueves</option>
+                    <option value="Viernes">Viernes</option>
+                </select>
+            <fieldset>
+                <legend>Fecha y hora:</legend>
+                <!-- Aquí se generarán dinámicamente las opciones de fecha y hora con JavaScript -->
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+
+    </main>
+    <footer class="footer">
+        <img class="footer-floating" src="Assets/slider_perro_gato.png" alt="">
+        <div class="footer-circle"></div>
+        <div class="logo-footer">
+            <img src="Assets/logo_text.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© copyright 2023 - Clinica Veterinaria</p>
+            <p>Developed by Adrián Coronel</p>
+        </div>
+    </footer>
+    <script src="JS/menu.js" ></script>
+    <script src="JS/botonform.js" ></script>
+    <script src="JS/clima.js" ></script>
+    
+</body>
+</html>

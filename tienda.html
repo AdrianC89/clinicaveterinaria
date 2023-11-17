@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Veterinaria</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedorclima">
+        <div id="caja1">
+            <span id="temperatura-valor"></span><span> - </span>
+            <span id="temperatura-descripcion"></span>
+        </div>
+        <div id="caja2">
+            <span id="ubicacion"></span>
+            <img id="icono-animado" src="" alt="" height="128" width="128">
+        </div>
+        <div id="caja3">
+            <span>Veloc. del Viento:</span>
+            <span id="viento-velocidad"></span>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="brand">
+                <img src="Assets/logo_text.png" alt="logo de veterinaria">
+            </div>
+            <div class="actions">
+                <img id="menu-icon" src="Assets/icons/menu.svg" alt="boton de menu">
+                <div class="menu-container">
+                    <div class="menu-dropdown" id="menuDropdown">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                            <li><a href="tienda.html">Tienda</a></li>
+                            <li><a href="https://www.facebook.com/?locale=es_LA">Facebook</a></li>
+                            <li><a href="https://twitter.com/">Twitter</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><a href="https://github.com/AdrianC89">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="contenedor-imagen">
+        <img src="Assets/purina-brand-elegir-juguetes-para-mascotas-banner-desktop.png.webp" alt="logotienda" class="imagen-recortada">
+    </div>    
+    <main>
+        <div class="menu-container">
+            <div class="vete-item">
+                <h3 class="vete-title">Peluche con chifle</h3>
+              <img src="Assets/peluchechifle.jpeg" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Peluche Sapito</h3>
+              <img src="Assets/peluche-sapito.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Mordiente</h3>
+              <img src="Assets/mordiente.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Boomerang</h3>
+              <img src="Assets/boomerang.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Boomerang</h3>
+              <img src="Assets/boomerang.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Boomerang</h3>
+              <img src="Assets/boomerang.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Boomerang</h3>
+              <img src="Assets/boomerang.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Mordiente</h3>
+              <img src="Assets/mordiente.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Peluche Sapito</h3>
+              <img src="Assets/peluche-sapito.png" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+            <div class="vete-item">
+                <h3 class="vete-title">Peluche con Chifle</h3>
+              <img src="Assets/peluchechifle.jpeg" alt="vete 1" class="imgvete">
+              <button class="description-toggle">Descripción</button>
+              <div class="vete-description">
+                <p>Descubre la diversión ilimitada con nuestro innovador juguete para mascotas, diseñado para brindar horas de entretenimiento a tu compañero peludo. Este juguete vibrante y colorido está elaborado con materiales seguros y duraderos, pensados para resistir incluso las mordeduras más entusiastas.
+
+                    Su diseño único incorpora texturas variadas para estimular los sentidos de tu mascota, mientras que su forma interactiva promueve el juego activo y saludable. Ya sea lanzándolo para un emocionante juego de buscar y atrapar, o simplemente dejándolo a disposición de tu mascota para que explore, este juguete garantiza momentos de diversión y ejercicio.
+                    
+                    Además, su construcción resistente asegura que sea apto tanto para juegos en interiores como en exteriores. ¡Haz que cada día sea una aventura emocionante para tu mascota con este juguete irresistible y lleno de alegría</p>
+              </div>
+            </div>
+
+
+        
+            
+
+            
+        </div>
+    </main>
+    <footer class="footer">
+        <img class="footer-floating" src="Assets/slider_perro_gato.png" alt="">
+        <div class="footer-circle"></div>
+        <div class="logo-footer">
+            <img src="Assets/logo_text.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>© copyright 2023 - Clinica Veterinaria</p>
+            <p>Developed by Adrián Coronel</p>
+        </div>
+    </footer>
+    <script src="JS/menu.js" ></script>
+    <script src="JS/botonform.js" ></script>
+    <script src="JS/clima.js" ></script>
+    <script src="JS/tienda.js" ></script>
+    
+</body>
+</html>

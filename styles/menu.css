@@ -29,6 +29,13 @@
     text-decoration: none;
     color: azure;
 }
+
+.menu-dropdown a:hover {
+    text-decoration: none;
+    color: rgb(5, 30, 67);
+
+        transition: 0.5s;
+}
 .menu-dropdown li:last-child {
     border-bottom: none;
 }
